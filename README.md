@@ -7,17 +7,25 @@ in Java.
 
 ## Downloading
 
-Download the .jar
+Download the precompiled .jar file or clone the repo from
+https://github.com/DevDungeon/mysql2excel and then run:
 
-## Running
-
-    java -jar mysql2excel-1.0.0.jar
-
-Help information will be output when run with no command line arguments
+    mvn package
 
 
 ## Usage
 
+### Print help information
+
+    java -jar mysql2excel-1.0.0.jar
+
+### Generate a settings template file
+
+    java -jar mysql2excel-1.0.0.jar -g sample.config
+
+### Dump from MySQL to Excel using settings in config file
+
+    java -jar mysql2excel-1.0.0.jar my.config
 
 
 ## Project Page
@@ -30,6 +38,6 @@ Help information will be output when run with no command line arguments
 NanoDano <nanodano@devdungeon.com>
 
 
+## Changelog
 
-
-
+* 2018-18-03 v1.0.0 - Initial stable release
