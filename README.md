@@ -30,7 +30,7 @@ https://github.com/DevDungeon/mysql2excel and then run:
 
 ## Project Page
 
-* https://www.devdungeon.com/projects
+* https://www.devdungeon.com/content/mysql2excel
 * https://www.github.com/DevDungeon/mysql2excel
 
 ## Contact
