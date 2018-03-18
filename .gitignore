@@ -1,0 +1,6 @@
+*.xlsx
+target
+output.xlsx
+*.properties
+*.config
+dependency-reduced-pom.xml
