@@ -35,12 +35,12 @@ public class MysqlDumper {
     static void dumpMysqlToExcelFile(String outputFileName, String dbHost, String dbName, String dbUser, String dbPass, String tableName) {
         // Create spreadsheet
         XSSFWorkbook workbook = new XSSFWorkbook();
-        XSSFSheet mySheet = workbook.createSheet("<tableName>");
+        XSSFSheet mySheet = workbook.createSheet("Data");
         // Connect to database
         Connection conn = null;
         Statement stmt = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://" + dbHost + ":3306/" + dbName, dbUser, dbPass);
+            conn = DriverManager.getConnection("jdbc:mysql://" + dbHost + ":3306/" + dbName + "?zeroDateTimeBehavior=convertToNull", dbUser, dbPass);
         } catch (SQLException ex) {
             Log.logException("Error connecting to database.", ex);
         }
@@ -49,7 +49,7 @@ public class MysqlDumper {
             System.exit(1);
         }
         Log.log("Connected.");
-        /// For each table!
+        
         ArrayList<String> columnNames = new ArrayList();
         // Get list of column names and write sheet headers
         int cellNum = 0;

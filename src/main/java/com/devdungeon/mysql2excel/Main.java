@@ -93,7 +93,7 @@ public class Main {
 
         // Load configuration file
         DbCreds creds = DbCreds.loadConfig(args[0]);
-        Log.log("Database host: \t" + creds.dbHost);
+        Log.log("Database Host: \t" + creds.dbHost);
         Log.log("Database Name: \t" + creds.dbName);
         Log.log("Database Table: \t" + creds.dbTable);
         Log.log("Database User: \t" + creds.dbUser);

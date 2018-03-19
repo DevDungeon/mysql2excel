@@ -40,4 +40,7 @@ NanoDano <nanodano@devdungeon.com>
 
 ## Changelog
 
-* 2018-18-03 v1.0.0 - Initial stable release
+* In current dev branch (Planned release version: v1.0.1)
+    * Added convert zeroDateTimeBehavior to convertToNull, minor formatting tweaks
+* 2018-03-18 v1.0.0
+    * Initial stable release
