@@ -1,17 +1,20 @@
 mysql2excel
 =============
 
-Command-line tool to dump MySQL tables to Microsoft Excel Spreadsheets written
+Command-line tool to dump MySQL tables to Microsoft Excel .xlsx Spreadsheets written
 in Java.
 
 
 ## Downloading
 
-Download the precompiled .jar file or clone the repo from
-https://github.com/DevDungeon/mysql2excel and then run:
+Download the latest release from https://github.com/DevDungeon/mysql2excel/releases
+or clone the repo from https://github.com/DevDungeon/mysql2excel
+    
+    git clone https://github.com/DevDungeon/mysql2excel
 
+    # Compile and package with Maven
+    cd mysql2excel
     mvn package
-
 
 ## Usage
 
