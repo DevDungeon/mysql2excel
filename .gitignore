@@ -5,3 +5,5 @@ target
 dependency-reduced-pom.xml
 .idea
 *.iml
+build.xml
+maven-build.xml

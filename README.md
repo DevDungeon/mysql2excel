@@ -17,15 +17,15 @@ https://github.com/DevDungeon/mysql2excel and then run:
 
 ### Print help information
 
-    java -jar mysql2excel-1.0.0.jar
+    java -jar mysql2excel-1.0.1.jar
 
 ### Generate a settings template file
 
-    java -jar mysql2excel-1.0.0.jar -g sample.config
+    java -jar mysql2excel-1.0.1.jar -g sample.config
 
 ### Dump from MySQL to Excel using settings in config file
 
-    java -jar mysql2excel-1.0.0.jar my.config
+    java -jar mysql2excel-1.0.1.jar my.config
 
 
 ## Project Page
@@ -40,7 +40,12 @@ NanoDano <nanodano@devdungeon.com>
 
 ## Changelog
 
-* In current dev branch (Planned release version: v1.0.1)
-    * Added convert zeroDateTimeBehavior to convertToNull, minor formatting tweaks
+* 2018-03-25 v1.0.1
+    * Bug fix: added convert zeroDateTimeBehavior to convertToNull, minor formatting tweaks
 * 2018-03-18 v1.0.0
     * Initial stable release
+
+## To do
+
+* Allow multiple tables or all tables to be dumped at once
+* Allow custom SQL query to be run
